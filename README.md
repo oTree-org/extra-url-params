@@ -1,11 +1,11 @@
-# About
+## About
 
 This is a small server that allows you to capture extra parameters passed in URLs.
 
 For example, you can have a URL like this:
 
 ```
-https://your-custom-site.herokuapp.com/?participant_label=JohnSmith&study_id=120383&&gender=M
+https://your-custom-site.herokuapp.com/?participant_label=JohnSmith&study_id=120383&gender=M
 ```
 
 The participant_label will be passed as is; all other parameters
