@@ -4,9 +4,6 @@ from starlette.requests import Request
 from starlette.responses import RedirectResponse
 from starlette.routing import Route
 
-# required if you set OTREE_AUTH_LEVEL
-REST_KEY = ''
-
 # if using Heroku, change this to https://YOURAPP.herokuapp.com
 OTREE_SERVER = "http://localhost:8000"
 
@@ -16,6 +13,9 @@ ROOM_NAME = 'my_room_name'
 # oTree calls it participant_label,
 # but other platforms may use 'id' or 'pid', so you can customize that here.
 PARTICIPANT_LABEL_PARAM = 'participant_label'
+
+# required if you set OTREE_AUTH_LEVEL
+REST_KEY = ''
 
 
 GET = requests.get

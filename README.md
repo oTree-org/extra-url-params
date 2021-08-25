@@ -11,6 +11,8 @@ https://your-custom-site.herokuapp.com/?participant_label=JohnSmith&aaa=120383&&
 The participant_label will be passed as is; all other parameters
 such as 'sid' and 'xid' will be passed to oTree as participant vars.
 
+It uses oTree's REST API.
+
 ## Setup
 
 Clone this repo, then install dependencies with `pip3 install -r requirements.txt`.
