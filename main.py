@@ -11,7 +11,8 @@ ROOM_NAME = 'my_room_name'
 
 # whatever URL parameter uniquely identifies the participant
 # oTree calls it participant_label,
-# but other platforms may use 'id' or 'pid', so you can customize that here.
+# but other platforms may require it to be called something else like 'id' or 'pid',
+# so you can customize that here.
 PARTICIPANT_LABEL_PARAM = 'participant_label'
 
 # required if you set OTREE_AUTH_LEVEL
@@ -45,7 +46,7 @@ def root(request: Request):
         'participant_vars',
         room_name=ROOM_NAME,
         participant_label=participant_label,
-        vars=dict(params),
+        vars=params,
     )
 
     room_url = f'{OTREE_SERVER}/room/{ROOM_NAME}/?participant_label={participant_label}'

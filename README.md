@@ -5,11 +5,11 @@ This is a small server that allows you to capture extra parameters passed in URL
 For example, you can have a URL like this:
 
 ```
-https://your-custom-site.herokuapp.com/?participant_label=JohnSmith&aaa=120383&&bbb=h9w132
+https://your-custom-site.herokuapp.com/?participant_label=JohnSmith&study_id=120383&&gender=M
 ```
 
 The participant_label will be passed as is; all other parameters
-such as 'sid' and 'xid' will be passed to oTree as participant vars.
+such as 'study_id' and 'gender' will be passed to oTree as participant vars.
 
 It uses oTree's REST API.
 
